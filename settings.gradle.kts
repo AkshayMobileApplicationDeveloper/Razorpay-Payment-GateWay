@@ -11,13 +11,17 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+// settings.gradle.kts
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
+        // Add other repositories here
     }
 }
+
+
 
 rootProject.name = "Razorpay Payment GateWay"
 include(":app")

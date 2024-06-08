@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.app.razorpaypaymentgateway"
-        minSdk = 34
+        minSdk = 27
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -41,3 +41,17 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+repositories {
+    mavenCentral()
+}
+/*
+External
+ */
+dependencies {
+    implementation ("com.github.skydoves:elasticviews:2.1.0")
+    implementation ("com.razorpay:checkout:1.6.38")
+}
+// settings.gradle.kts
+
+
+
